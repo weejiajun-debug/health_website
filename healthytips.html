@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Tips | Small Steps, Brighter Days</title>
+  <link rel="stylesheet" href="healthytips.css">
+  <script src="healthytips.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="healthytips.html" class="active">Healthy Tips</a>
+    <a href="getinvolved.html">Get Involved</a>
+    <a href="activities.html">Activities</a>
+    <a href="about.html">About</a>
+    <a href="improved_health_access.html">Improved Access to Healthcare</a>
+  </nav>
+
+  <main>
+    <!-- Introduction -->
+    <section class="hero">
+      <div class="hero-text">
+        <span class="eyebrow">YOUR DAILY DOSE OF WELLNESS</span>
+        <h1>Healthy Tips</h1>
+        <h2>Small changes. Big difference.</h2>
+        <p>
+          A healthier and happier life starts with simple daily habits.
+          Discover easy ways to nourish your body, care for your mind
+          and feel your best, one step at a time.
+        </p>
+        <a href="#healthy-tips" class="primary-btn">Explore Healthy Habits</a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=85"
+          alt="A colourful selection of nutritious foods">
+      </div>
+    </section>
+
+    <!-- Healthy Tips -->
+    <section class="tips-section" id="healthy-tips">
+      <div class="section-heading">
+        <span class="eyebrow">LIVE WELL EVERY DAY</span>
+        <h2>Five Habits for a Healthier You</h2>
+        <p>Small actions today can build healthier habits for tomorrow.</p>
+      </div>
+
+      <div class="tips-grid">
+        <article class="tip-card">
+          <div class="tip-image">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80"
+              alt="A colourful bowl of vegetables and healthy food">
+          </div>
+          <div class="tip-content">
+            <span class="tip-icon">🥗</span>
+            <h3>Eat Nutritious Food</h3>
+            <p>Enjoy a variety of fruits, vegetables, whole grains and protein to help your body grow and stay energised.</p>
+          </div>
+        </article>
+
+        <article class="tip-card">
+          <div class="tip-image">
+            <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=700&q=80"
+              alt="A person exercising outdoors">
+          </div>
+          <div class="tip-content">
+            <span class="tip-icon">🏃</span>
+            <h3>Stay Active</h3>
+            <p>Walk, cycle, dance or play a sport. Choose activities you enjoy and make movement part of your day.</p>
+          </div>
+        </article>
+
+        <article class="tip-card">
+          <div class="tip-image">
+            <img src="https://images.unsplash.com/photo-1511295742362-92c96b8c8f9e?auto=format&fit=crop&w=700&q=80"
+              alt="A calm and comfortable bedroom">
+          </div>
+          <div class="tip-content">
+            <span class="tip-icon">🌙</span>
+            <h3>Get Enough Rest</h3>
+            <p>Keep a regular sleep routine and give your body enough rest to recharge, learn and concentrate.</p>
+          </div>
+        </article>
+
+        <article class="tip-card">
+          <div class="tip-image">
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=700&q=80"
+              alt="Peaceful morning sunlight over a green landscape">
+          </div>
+          <div class="tip-content">
+            <span class="tip-icon">💚</span>
+            <h3>Care for Your Mental Health</h3>
+            <p>Take breaks, enjoy hobbies and talk to someone you trust when you feel worried or overwhelmed.</p>
+          </div>
+        </article>
+
+        <article class="tip-card">
+          <div class="tip-image">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=80"
+              alt="A refreshing glass of drinking water">
+          </div>
+          <div class="tip-content">
+            <span class="tip-icon">💧</span>
+            <h3>Stay Hydrated</h3>
+            <p>Drink water regularly throughout the day, especially when the weather is hot or you are exercising.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Three-Day Health Tracker -->
+    <section class="tracker-section" id="health-tracker">
+      <div class="section-heading">
+        <span class="eyebrow">YOUR WELLNESS JOURNEY</span>
+        <h2>My Health Check</h2>
+        <p>Reflect on your habits over the past three days and discover small steps you could take to care for yourself.</p>
+      </div>
+
+      <div class="tracker-layout">
+        <div class="tracker-panel">
+          <h3>My 3-Day Habit Tracker</h3>
+          <p class="panel-description">Enter your daily totals below.</p>
+
+          <form id="health-form">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Sleep (hours)</th>
+                    <th>Meals</th>
+                    <th>Water (cups)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Day 1</th>
+                    <td><input type="number" name="sleep1" min="0" max="24" step="0.5" placeholder="8" required aria-label="Day 1 hours of sleep"></td>
+                    <td><input type="number" name="meals1" min="0" max="10" step="1" placeholder="3" required aria-label="Day 1 number of meals"></td>
+                    <td><input type="number" name="water1" min="0" max="30" step="1" placeholder="6" required aria-label="Day 1 cups of water"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Day 2</th>
+                    <td><input type="number" name="sleep2" min="0" max="24" step="0.5" placeholder="8" required aria-label="Day 2 hours of sleep"></td>
+                    <td><input type="number" name="meals2" min="0" max="10" step="1" placeholder="3" required aria-label="Day 2 number of meals"></td>
+                    <td><input type="number" name="water2" min="0" max="30" step="1" placeholder="6" required aria-label="Day 2 cups of water"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Day 3</th>
+                    <td><input type="number" name="sleep3" min="0" max="24" step="0.5" placeholder="8" required aria-label="Day 3 hours of sleep"></td>
+                    <td><input type="number" name="meals3" min="0" max="10" step="1" placeholder="3" required aria-label="Day 3 number of meals"></td>
+                    <td><input type="number" name="water3" min="0" max="30" step="1" placeholder="6" required aria-label="Day 3 cups of water"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="privacy-note">Your entries are used in this page to calculate your result and are not sent to a server.</p>
+            <button type="submit" class="primary-btn check-btn">Check My Health</button>
+            <button type="reset" class="reset-btn">Clear Entries</button>
+            <p id="form-message" class="form-message" role="alert"></p>
+          </form>
+        </div>
+
+        <!-- Result Panel -->
+        <aside class="result-panel" aria-live="polite">
+          <span class="eyebrow">YOUR PERSONAL SUMMARY</span>
+          <h3>Your Wellness Snapshot</h3>
+
+          <div class="score-circle" id="score-circle">
+            <div class="score-inner">
+              <strong id="score">--%</strong>
+              <span>Habit score</span>
+            </div>
+          </div>
+
+          <p id="result-message" class="result-message">
+            Your journey starts with one small step!
+          </p>
+
+          <div class="averages">
+            <div class="average-item">
+              <span class="average-icon">🌙</span>
+              <div>
+                <span class="average-label">Average sleep</span>
+                <strong id="avg-sleep">-- hours</strong>
+              </div>
+            </div>
+
+            <div class="average-item">
+              <span class="average-icon">🍽️</span>
+              <div>
+                <span class="average-label">Average meals</span>
+                <strong id="avg-meals">-- per day</strong>
+              </div>
+            </div>
+
+            <div class="average-item">
+              <span class="average-icon">💧</span>
+              <div>
+                <span class="average-label">Average water</span>
+                <strong id="avg-water">-- cups/day</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback-box">
+            <h4>Your Next Small Steps</h4>
+            <ul id="suggestions">
+              <li>Complete the tracker to receive personalised suggestions.</li>
+            </ul>
+          </div>
+
+          <p class="disclaimer">
+            This score is an educational habit indicator, not a medical assessment.
+            Health needs differ from person to person.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Closing Call to Action -->
+    <section class="closing-section">
+      <span>🌱</span>
+      <h2>Small steps. Brighter days.</h2>
+      <p>Every healthy habit is a step towards a happier, healthier life.</p>
+      <a href="getinvolved.html" class="primary-btn">Get Involved</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Healthy Living | SDG 3: Good Health and Well-being</p>
+  </footer>
+
+</body>
+</html>
